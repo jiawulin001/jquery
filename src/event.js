@@ -182,7 +182,7 @@ jQuery.event = {
 				handlers.delegateCount = 0;
 
 				// Only use addEventListener if the special events handler returns false
-				if ( !special.setup )
+				if ( !special.setup ) {
 				    special.setup.call( elem, data, namespaces, eventHandle );
 				}
 			}
